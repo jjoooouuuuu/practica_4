@@ -9,7 +9,7 @@ int main (int argc, char *argv[]){
         	exit(EXIT_FAILURE);
 	}
 
-	int fd = open(argv[1], O_CREAT | O_WRONLY | O_TRUNC, 0644);
+	int fd = open(argv[1], O_CREAT | O_WRONLY, 0644);
 	if (fd == -1){
 		perror("Error obrint l'arxiu\n");
 		exit(EXIT_FAILURE);
